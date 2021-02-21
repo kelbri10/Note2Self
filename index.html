@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+    <link rel='stylesheet' type='text/css' href='./css/style.css'>
+    <link rel='stylesheet' type='text/css' href='./css/layout.css'>
+
     <title>Note2Self</title>
 </head>
+
 <body>
     <header>
         <h1 class='main'>Note <span class='number-tile'> 2 </span> Self</h1>
@@ -20,18 +28,36 @@
     </nav>
 
     <main class='introduction'>
-        <p>We have good days and bad days. Schedule a note to send when the bad days come to keep yourself encouraged.</p>
+        <h2>We have good days and bad days. Schedule a note to send when the bad days come to keep yourself encouraged.</h2>
     </main>
 
-    <form id='scheduled-Note'>
-        
-        <label for='email'>Email address: </label><br>
-        <input type='text' id='email' name='email'><br><br>
+    <form class='note'>
+        <div id = 'information'>
+            <h3 class='form-questions'>What's your name? </h3>
+            <label for='first-name'>First Name: </label>
+            <input type='text' id='first-name' name='first-name'>
 
-        <label for='new-note'>Enter your note to self: </label><br>
-        <input type='text' id='new-note' name='new-note'><br><br>
+            <h3 class='form-questions'> What email would you like to send your note to? </h3>
+            <label for='email'>Email address: </label><br>
+            <input type='text' id='email' name='email'><br><br>
+        </div>
 
-        <input type='submit'>
+        <div id = 'date'>
+            <label for='date'>Schedule for: </label><br>
+            <input type='date' id='date' name='date'><br><br>
+        </div>
+
+        <div id='new-note'>
+            <h3>Now to the fun part! Write something encouraging, loving, and caring to yourself!</h3>
+            <label for='new-note'>Message: </label><br>
+            <input type='text' id='new-note' name='new-note'><br><br>
+        </div>
+
+        <div id='form-buttons'>
+            <input type='button' value='Save Draft'><br>
+            <input type='button' value='Schedule Note'>
+        </div>
+
     </form>
 
     <footer>

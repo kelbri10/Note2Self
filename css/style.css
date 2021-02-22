@@ -5,37 +5,20 @@
 
 /*header formatting*/
 header{ 
-    background-color:#ffd76b; 
-    padding: 1rem;  
+    font-size: 2rem;     
 }
 
 .main-title { 
     font-family: 'Homemade Apple', cursive;
+    color: #ffd870; 
     text-align: center; 
-    text-transform: lowercase;
-    color: white; 
+    text-transform: lowercase;   
 }
 
 .number-title { 
     font-family: 'Homemade Apple', cursive;
 }
 
-/*nav bar styling*/
-.main-nav ul{ 
-    list-style-type: none; 
-
-    display: flex; 
-    justify-content: space-around;
-}
-
-.main-nav ul>li{ 
-    color: white; 
-    padding: 0.5rem; 
-}
-
-.main-nav ul>li:hover{
-
-}
 
 /*main section styling*/
 .introduction {
@@ -44,7 +27,7 @@ header{
 
 .introduction h2{
     font-family: 'Homemade Apple', cursive;
-    font-size: 3rem; 
+    font-size: 2rem; 
 }
 /*svg img styling and flex-container */
 img { 
@@ -56,6 +39,10 @@ img {
     display: flex; 
     flex-direction: row-reverse; 
     justify-content: space-around;
+    align-items: center; 
+
+    padding: 1rem; 
+    border-radius: 5rem;
 }
 
 /*form styling */
@@ -81,15 +68,16 @@ input[type=text]:focus, input[type=date]:focus{
 input[type=button] { 
     border-style: none; 
     border-radius: 5rem; 
-
+    background-color:black; 
+    color: white; 
     padding: 1rem; 
     
 }
 
 input[type=button]:hover{ 
     cursor: pointer; 
-    background-color: #ffd76b; 
-    color: white; 
+    background-color: #ffd870; ; 
+    color: black; 
 }
 
 /*footer*/

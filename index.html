@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet"> 
+
     <link rel='stylesheet' type='text/css' href='./css/style.css'>
     <link rel='stylesheet' type='text/css' href='./css/layout.css'>
 
@@ -16,46 +19,60 @@
 
 <body>
     <header>
-        <h1 class='main'>Note <span class='number-tile'> 2 </span> Self</h1>
+        <h1 class='main-title'>Note <span class='number-title'> 2 </span> Self</h1>
+
+        <nav class='main-nav'>
+            <ul>
+                <li>Home</li>
+                <li>Past Notes</li>
+                <li>Scheduled Notes</li>
+            </ul>
+        </nav>
+    
     </header>
 
-    <nav class='main-nav'>
-        <ul>
-            <li>Home</li>
-            <li>Past Notes</li>
-            <li>Scheduled Notes</li>
-        </ul>
-    </nav>
-
     <main class='introduction'>
-        <h2>We have good days and bad days. Schedule a note to send when the bad days come to keep yourself encouraged.</h2>
+        <h2>Let's normalize loving ourselves.</h2>
+        <img src='./imgs/undraw_proud_self_1ddv.svg' alt='illustration of girl standing proudly next to life-size phone' />
+        <ol>
+            <li>Fill out your preferred name and email address.</li>
+            <li>Select a date to schedule your note2self!</li>
+            <li>Click Schedule Note to surprise yourself with an encouraging message or reminder for your future you!</li>
+        </ol>
+        <p>We deserve all the love, care, and respect, especially when it comes to giving it to ourselves.</p>
     </main>
 
-    <form class='note'>
-        <div id = 'information'>
-            <h3 class='form-questions'>What's your name? </h3>
-            <input type='text' id='first-name' name='first-name'>
+    <div class="form-container">
 
-            <h3 class='form-questions'> What email would you like to send your note to? </h3>
-            <input type='text' id='email' name='email'><br><br>
-        </div>
+        <form class='note'>
+            <div id = 'information'>
+                <h3 class='form-questions'>What's your name? </h3>
+                <input type='text' id='first-name' name='first-name'>
 
-        <div id = 'date'>
-            <h3>When would you like to send your note?</h3>
-            <input type='date' id='date' name='date'><br><br>
-        </div>
+                <h3 class='form-questions'> What email would you like to send your note to? </h3>
+                <input type='text' id='email' name='email'><br><br>
+            </div>
 
-        <div id='new-note'>
-            <h3>Now to the fun part! Write something encouraging, loving, and caring to yourself!</h3>
-            <input type='text' id='new-note' name='new-note'><br><br>
-        </div>
+            <div id = 'date'>
+                <h3>When would you like to send your note?</h3>
+                <input type='date' id='date' name='date'><br><br>
+            </div>
 
-        <div id='form-buttons'>
-            <input type='button' value='Save Draft'>
-            <input type='button' value='Schedule Note'>
-        </div>
+            <div id='new-note'>
+                <h3>Write something encouraging, loving, and caring to yourself!</h3>
+                <input type='text' id='new-note' name='new-note'><br><br>
+            </div>
 
-    </form>
+            <div id='form-buttons'>
+                <input type='button' value='Save Draft'>
+                <input type='button' value='Schedule Note'>
+            </div>
+
+        </form>
+
+    </div>
+
+    
 
     <footer>
         <p>Created by Kelsey Hughes</p>

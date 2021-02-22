@@ -1,23 +1,76 @@
 *{ 
+    box-sizing: border-box; 
     font-family: 'Poppins', sans-serif;
+}
+
+/*header formatting*/
+header{ 
+    background-color:#ffd76b; 
+    padding: 1rem;  
+}
+
+.main-title { 
+    font-family: 'Homemade Apple', cursive;
+    text-align: center; 
+    text-transform: lowercase;
+    color: white; 
+}
+
+.number-title { 
+    font-family: 'Homemade Apple', cursive;
 }
 
 /*nav bar styling*/
 .main-nav ul{ 
     list-style-type: none; 
+
+    display: flex; 
+    justify-content: space-around;
 }
 
+.main-nav ul>li{ 
+    color: white; 
+    padding: 0.5rem; 
+}
+
+.main-nav ul>li:hover{
+
+}
+
+/*main section styling*/
+.introduction {
+    text-align: center; 
+}
+
+.introduction h2{
+    font-family: 'Homemade Apple', cursive;
+    font-size: 3rem; 
+}
+/*svg img styling and flex-container */
+img { 
+    width: 15rem; 
+    height: 15rem; 
+}
+
+.form-container { 
+    display: flex; 
+    flex-direction: row-reverse; 
+    justify-content: space-around;
+}
 
 /*form styling */
 /*1 rem = 10px */
+.note { 
+    width: 50rem; 
+}
 input[type=text], input[type=date]{ 
-    background-color: #d3d3d3; 
+    background-color: lightgrey; 
     border-style: none; 
     padding: 0.5rem;  
 }
 
 #new-note input[type=text]{ 
-    width: 50rem; 
+    width: 25rem; 
     height: 25rem; 
 }
 
@@ -30,10 +83,18 @@ input[type=button] {
     border-radius: 5rem; 
 
     padding: 1rem; 
+    
 }
 
 input[type=button]:hover{ 
     cursor: pointer; 
-    background-color: black; 
+    background-color: #ffd76b; 
     color: white; 
 }
+
+/*footer*/
+footer { 
+    text-align: center; 
+}
+
+/*media queries at breakpoints-480px, 768px, 1024px*/
